@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiBaseShell.AppShell"
+             xmlns:Pages="clr-namespace:MauiBaseShell.Pages"
+             Title="AppShell"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="White">
+
+    <TabBar>
+        <Tab Title="Page One">
+            <ShellContent ContentTemplate="{DataTemplate Pages:PageOne }" />
+            <!--Icon="sebastian.png">-->
+        </Tab>
+        <Tab Title="Page Two">
+            <ShellContent ContentTemplate="{DataTemplate Pages:PageTwo}" />
+            <!--Icon="washington.png">-->
+        </Tab>
+        <Tab Title="Page Three">
+            <ShellContent ContentTemplate="{DataTemplate Pages:PageThree}" />
+            <!--Icon="nora.png">-->
+        </Tab>
+    </TabBar>
+
+</Shell>
