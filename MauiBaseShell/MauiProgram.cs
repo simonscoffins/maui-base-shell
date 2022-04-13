@@ -1,4 +1,6 @@
-﻿namespace MauiBaseShell;
+﻿using MauiBaseShell.Configuration;
+
+namespace MauiBaseShell;
 
 public static class MauiProgram
 {
@@ -7,6 +9,9 @@ public static class MauiProgram
 		var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()
+
+			.ConfigurePages()
+
 			.ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
