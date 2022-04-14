@@ -4,7 +4,7 @@ namespace MauiBaseShell.Pages;
 
 public partial class PageTwo : ContentPage {
 
-	private PageTwoViewModel _vm;
+	private readonly PageTwoViewModel _vm;
 
     public PageTwo(PageTwoViewModel vm) {
 
