@@ -2,11 +2,15 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiBaseShell.Pages.PageThree"
+             xmlns:viewModels="clr-namespace:MauiBaseShell.ViewModels"
+             x:DataType="viewModels:PageThreeViewModel"                          
              Title="PageThree"
              BackgroundColor="White">
+
     <StackLayout>
-        <Label Text="Welcome to Page Three!"
+        <Label Text="{Binding Message}"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
     </StackLayout>
+
 </ContentPage>
