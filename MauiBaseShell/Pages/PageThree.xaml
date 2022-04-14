@@ -7,7 +7,7 @@
              Title="PageThree"
              BackgroundColor="White">
 
-    <StackLayout>
+    <StackLayout VerticalOptions="Center">
         <Label Text="{Binding Message}"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
