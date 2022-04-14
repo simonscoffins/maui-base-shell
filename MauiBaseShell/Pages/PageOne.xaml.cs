@@ -4,7 +4,7 @@ namespace MauiBaseShell.Pages;
 
 public partial class PageOne : ContentPage {
 
-	private PageOneViewModel _vm;
+	private readonly PageOneViewModel _vm;
 
 	public PageOne(PageOneViewModel vm) { 
 		InitializeComponent();
