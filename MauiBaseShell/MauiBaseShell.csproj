@@ -56,6 +56,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="Refractored.MvvmHelpers" Version="1.6.2" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="AppShell.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
