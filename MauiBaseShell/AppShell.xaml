@@ -3,23 +3,63 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiBaseShell.AppShell"
              xmlns:Pages="clr-namespace:MauiBaseShell.Pages"
-             Title="AppShell"
-             Shell.NavBarIsVisible="False"
+             Title="BaseShell"
+             Shell.BackgroundColor="Beige"
+                Shell.TitleColor="Black"
              BackgroundColor="White">
 
-    <TabBar>
+    <!--<TabBar>
         <Tab Title="Page One">
             <ShellContent ContentTemplate="{DataTemplate Pages:PageOne }" />
-            <!--Icon="sebastian.png">-->
+            --><!--Icon="sebastian.png">--><!--
         </Tab>
         <Tab Title="Page Two">
             <ShellContent ContentTemplate="{DataTemplate Pages:PageTwo}" />
-            <!--Icon="washington.png">-->
+            --><!--Icon="washington.png">--><!--
         </Tab>
         <Tab Title="Page Three">
             <ShellContent ContentTemplate="{DataTemplate Pages:PageThree}" />
-            <!--Icon="nora.png">-->
+            --><!--Icon="nora.png">--><!--
         </Tab>
-    </TabBar>
+    </TabBar>-->
+
+
+    <FlyoutItem Title="Page One" FlyoutDisplayOptions="AsSingleItem">
+
+        <Tab Title="Page One A">
+            <ShellContent Title="Page One A" ContentTemplate="{DataTemplate Pages:PageOneA }" Route="PageOneA" />
+        </Tab>
+
+        <Tab Title="Page One B">
+            <ShellContent Title="Page One B" ContentTemplate="{DataTemplate Pages:PageOneB }" Route="PageOneB" />
+        </Tab>
+    </FlyoutItem>
+
+
+    <FlyoutItem Title="Page Two" FlyoutDisplayOptions="AsSingleItem">
+
+        <Tab Title="Page Two A">
+            <ShellContent Title="Page Two A" ContentTemplate="{DataTemplate Pages:PageTwoA }" Route="PageTwoA" />
+        </Tab>
+
+        <Tab Title="Page Two B">
+            <ShellContent Title="Page Two B" ContentTemplate="{DataTemplate Pages:PageTwoB }" Route="PageTwoB" />
+        </Tab>
+    </FlyoutItem>
+
+
+    <FlyoutItem Title="Page Three" FlyoutDisplayOptions="AsSingleItem">
+
+        <Tab Title="Page Three A">
+            <ShellContent Title="Page Three A" ContentTemplate="{DataTemplate Pages:PageThreeA }" Route="PageThreeA" />
+        </Tab>
+
+        <Tab Title="Page Three B">
+            <ShellContent Title="Page Three B" ContentTemplate="{DataTemplate Pages:PageThreeB }" Route="PageThreeB" />
+        </Tab>
+    </FlyoutItem>
+
+
+
 
 </Shell>

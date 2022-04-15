@@ -62,13 +62,58 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Pages\PageOneB.xaml.cs">
+	    <DependentUpon>PageOneB.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\PageOneA.xaml.cs">
+	    <DependentUpon>PageOneA.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\PageThreeB.xaml.cs">
+	    <DependentUpon>PageThreeB.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\PageThreeA.xaml.cs">
+	    <DependentUpon>PageThreeA.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\PageTwoB.xaml.cs">
+	    <DependentUpon>PageTwoB.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\PageTwoA.xaml.cs">
+	    <DependentUpon>PageTwoA.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="AppShell.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\PageOneB.xaml">
+	    <SubType>Designer</SubType>
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\PageOneA.xaml">
+	    <SubType>Designer</SubType>
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\PageOne.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Pages\PageThreeB.xaml">
+	    <SubType>Designer</SubType>
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\PageThreeA.xaml">
+	    <SubType>Designer</SubType>
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\PageThree.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\PageTwoB.xaml">
+	    <SubType>Designer</SubType>
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\PageTwoA.xaml">
+	    <SubType>Designer</SubType>
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\PageTwo.xaml">
